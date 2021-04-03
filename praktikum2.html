@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Z-Index</title>
+    <style>
+        #layera {
+            position: absolute;
+            margin: 40px 200px;
+            height: 200px;
+            width: 200px;
+            background: rgb(3, 203, 253);
+            z-index: 3;
+        }
+
+        #layerb {
+            position: absolute;
+            margin: 150px 0;
+            height: 150px;
+            width: 300px;
+            background: rgb(252, 253, 253);
+            z-index: 2;
+        }
+
+        #layerc {
+            position: absolute;
+            margin: 0 20px;
+            height: 200px;
+            width: 400px;
+            background: rgb(124, 252, 40);
+            z-index: 1;
+        }
+        .body {
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="body">
+    <div id="layera"> Lapis 1</div>
+    <div id="layerb"> Lapis 2</div>
+    <div id="layerc"> Lapis 3</div>
+</body>
+</html>

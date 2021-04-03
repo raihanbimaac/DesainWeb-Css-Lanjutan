@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.1</title>
+    <style>
+        .static{
+            left: 100px;
+            position: static;
+            width: 300px;
+            height: 500px;
+            background: rgb(91, 255, 58);
+        }
+
+        .relative {
+            left: 100px;
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background: rgb(250, 4, 4);
+        }
+
+        .absolute {
+            left: 50px;
+            top: 150px;
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background: rgb(64, 208, 252);
+        }
+
+        .fixed {
+            left: 250px;
+            top: 50px;
+            position: fixed;
+            width: 200px;
+            height: 100px;
+            background: rgb(224, 245, 37) ;
+        }
+
+        .body {
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="static">
+        Berikut elemen position:static. <br>Nilai left 100px tidak berpengaruh
+    </div>
+    <div class="relative">
+        Berikut elemen position:relative. <br>Nilai left 100px mengikuti alur
+    </div>
+    <div class="absolute">
+        Berikut elemen position:absolute. <br>Bisa diletakan sesuai mau kita
+    </div>
+    <div class="fixed">
+        Berikut elemen position:fixed. <br>posisinya tetap walau di scrool
+    </div>
+</body>
+</html>
